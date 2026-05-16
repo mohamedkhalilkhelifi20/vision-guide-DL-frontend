@@ -1,6 +1,6 @@
 // ── API ───────────────────────────────────────────────────────────────────────
 export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000"
-export const API_DETECT_ENDPOINT = `${API_BASE_URL}/api/detect`
+export const API_DETECT_ENDPOINT = `${process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000"}/api/detect`
 
 // ── LANGUES ───────────────────────────────────────────────────────────────────
 export const LANGUAGES = [
